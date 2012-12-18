@@ -458,6 +458,7 @@ _URLS = [
   ('/', FrontPage),
   ('/server', Login),
   ('/login', FinishLogin),
+  ('/_ah/xrds',XRDS),
   ('/xrds',XRDS),
   ('/[^/]*', UserXRDS),
 ]
