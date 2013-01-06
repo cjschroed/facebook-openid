@@ -179,6 +179,9 @@ class Handler(BaseHandler):
 #mrk
 #        oidresponse.fields.setArg('http://openid.net/sreg/1.0', 'nickname', user.nickname())
 #        oidresponse.fields.setArg('http://openid.net/sreg/1.0', 'email', user.email())
+#          oidresponse.fields.setArg('http://openid.net/srv/ax/1.0', 'nickname', user.nickname)
+#          oidresponse.fields.setArg('http://schema.openid.net/contact/email', 'email', user.email)
+#          oidresponse.fields.setArg('http://axschema.org/contact/email', 'email', user.email)
         pass
     logging.info('Using response: %s' % oidresponse)
     encoded_response = oidserver.encodeResponse(oidresponse)
